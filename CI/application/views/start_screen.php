@@ -13,7 +13,7 @@
 			<div id="divUserName" class="control-group">
 					<div class="controls">
 						<?php
-						$attributes_input = array('name' => 'user_name', 'placeholder' => 'Username' ,'id' => 'txtUserName', 'class' => 'input-medium', 'style' => 'height: 30px;');
+						$attributes_input = array('name' => 'username', 'placeholder' => 'Username' ,'id' => 'txtUserName', 'class' => 'input-medium', 'style' => 'height: 30px;');
 						echo form_input($attributes_input);
 							?>
 					</div>
@@ -21,7 +21,7 @@
 					<div class="controls">
 					<?php
 					$attributes_input = array('name' => 'password', 'placeholder' => 'Password' ,'id' => 'txtPassWord', 'class' => 'input-medium', 'style' => 'margin-top: 15px; height: 30px;');
-					echo form_input($attributes_input);
+					echo form_password($attributes_input);
 						?>
 					</div>
 					<button class="btn btn-primary" type="submit" style="height: 80px; margin-left: 180px; margin-bottom: 0px; margin-top: -90px; width: 80px;">Login</button>

@@ -1,5 +1,4 @@
 <?php
-
 class Dashboard extends CI_Controller {
 	function index() {
 	}
@@ -7,5 +6,4 @@ class Dashboard extends CI_Controller {
 	function login() {
 	}
 }
-
 ?>
