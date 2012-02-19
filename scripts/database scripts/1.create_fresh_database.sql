@@ -156,9 +156,10 @@ CREATE  TABLE IF NOT EXISTS `ifoodie`.`queue` (
 ENGINE = InnoDB;
 
 
-CREATE USER `db_admin`@`Zangetsu` IDENTIFIED BY 'ifoodiePwds12';
-GRANT ALL ON `ifoodie.*` TO `db_admin`@`Zangetsu`;
+CREATE USER 'db_admin_ifoodie'@'localhost' IDENTIFIED BY 'ifoodiePwds12';
 
+GRANT ALL PRIVILEGES ON * . * TO 'db_admin_ifoodie'@'localhost' IDENTIFIED BY 'ifoodiePwds12' WITH GRANT OPTION MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0 ;
+GRANT ALL PRIVILEGES ON `ifoodie` . * TO 'db_admin_ifoodie'@'localhost' WITH GRANT OPTION ;
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
